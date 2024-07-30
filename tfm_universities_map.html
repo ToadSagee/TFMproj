@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_109c8de2b10a6721aa8ea012a19ffdd9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_109c8de2b10a6721aa8ea012a19ffdd9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_109c8de2b10a6721aa8ea012a19ffdd9 = L.map(
+                "map_109c8de2b10a6721aa8ea012a19ffdd9",
+                {
+                    center: [34.8526, -82.394],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_011da3f31cbf6ef6c2fea5fe8e6e5a54 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_011da3f31cbf6ef6c2fea5fe8e6e5a54.addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var marker_9d9fc8d1881fea5c8f1bee0d1684fc12 = L.marker(
+                [29.6617, -82.3346],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_18a169d29d5f773b0ef4901737ddbb64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d9fc8d1881fea5c8f1bee0d1684fc12.setIcon(icon_18a169d29d5f773b0ef4901737ddbb64);
+        
+    
+        var popup_c0086e89ae26f1ee29f967f5060849a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e325009149a68a2f445369b7799add9 = $(`<div id="html_8e325009149a68a2f445369b7799add9" style="width: 100.0%; height: 100.0%;">The Fresh Market, Gainesville</div>`)[0];
+                popup_c0086e89ae26f1ee29f967f5060849a0.setContent(html_8e325009149a68a2f445369b7799add9);
+            
+        
+
+        marker_9d9fc8d1881fea5c8f1bee0d1684fc12.bindPopup(popup_c0086e89ae26f1ee29f967f5060849a0)
+        ;
+
+        
+    
+    
+            var marker_3b473f53428c7608f1d157ec917e4a1b = L.marker(
+                [33.8197, -84.3844],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_433f1320e433e1d57c9ce15653d44228 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b473f53428c7608f1d157ec917e4a1b.setIcon(icon_433f1320e433e1d57c9ce15653d44228);
+        
+    
+        var popup_6015f340b53e58f4068b55c70e0b8233 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62351eb417dd64c795ae431bda1b4701 = $(`<div id="html_62351eb417dd64c795ae431bda1b4701" style="width: 100.0%; height: 100.0%;">The Fresh Market, Atlanta</div>`)[0];
+                popup_6015f340b53e58f4068b55c70e0b8233.setContent(html_62351eb417dd64c795ae431bda1b4701);
+            
+        
+
+        marker_3b473f53428c7608f1d157ec917e4a1b.bindPopup(popup_6015f340b53e58f4068b55c70e0b8233)
+        ;
+
+        
+    
+    
+            var marker_a050d2891ee606f959f4940c0355c1db = L.marker(
+                [30.5026, -84.2905],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_26b6a0682b94b31d80f238cedcc093cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a050d2891ee606f959f4940c0355c1db.setIcon(icon_26b6a0682b94b31d80f238cedcc093cf);
+        
+    
+        var popup_e5befc860dd5fa1658a281cec4e72b44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a21cf6c9f208eae578315fc3727cf0f = $(`<div id="html_3a21cf6c9f208eae578315fc3727cf0f" style="width: 100.0%; height: 100.0%;">The Fresh Market, Tallahassee</div>`)[0];
+                popup_e5befc860dd5fa1658a281cec4e72b44.setContent(html_3a21cf6c9f208eae578315fc3727cf0f);
+            
+        
+
+        marker_a050d2891ee606f959f4940c0355c1db.bindPopup(popup_e5befc860dd5fa1658a281cec4e72b44)
+        ;
+
+        
+    
+    
+            var marker_d31970ea727e8b0d6ea212f0eae84dfd = L.marker(
+                [39.9853, -75.1875],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_7feaa171c30542e375fd812ec0a85f69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d31970ea727e8b0d6ea212f0eae84dfd.setIcon(icon_7feaa171c30542e375fd812ec0a85f69);
+        
+    
+        var popup_367a01ec8993ca0091180f0c883d4202 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4783ccb6848883c8f1fdee1e4b8de45 = $(`<div id="html_f4783ccb6848883c8f1fdee1e4b8de45" style="width: 100.0%; height: 100.0%;">Urena Fresh Market, Philadelphia</div>`)[0];
+                popup_367a01ec8993ca0091180f0c883d4202.setContent(html_f4783ccb6848883c8f1fdee1e4b8de45);
+            
+        
+
+        marker_d31970ea727e8b0d6ea212f0eae84dfd.bindPopup(popup_367a01ec8993ca0091180f0c883d4202)
+        ;
+
+        
+    
+    
+            var marker_e0d44dba7eecaac204a7755194328feb = L.marker(
+                [30.4087, -91.0917],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_f2e20322aec9362f05e7e76e790989a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0d44dba7eecaac204a7755194328feb.setIcon(icon_f2e20322aec9362f05e7e76e790989a6);
+        
+    
+        var popup_178c868c5a37b7f4aec7113646a704b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_100f8093b157f8e1e83b8a1b39913b8e = $(`<div id="html_100f8093b157f8e1e83b8a1b39913b8e" style="width: 100.0%; height: 100.0%;">The Fresh Market, Baton Rouge</div>`)[0];
+                popup_178c868c5a37b7f4aec7113646a704b5.setContent(html_100f8093b157f8e1e83b8a1b39913b8e);
+            
+        
+
+        marker_e0d44dba7eecaac204a7755194328feb.bindPopup(popup_178c868c5a37b7f4aec7113646a704b5)
+        ;
+
+        
+    
+    
+            var marker_ca4ebbf2841b0e7ae8915f2dfd357bc6 = L.marker(
+                [33.4297, -86.7254],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_07f02564c8bce5fc5ddb86f75e7c0720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca4ebbf2841b0e7ae8915f2dfd357bc6.setIcon(icon_07f02564c8bce5fc5ddb86f75e7c0720);
+        
+    
+        var popup_132643713ebfced7826b54fcaa8d9f99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dc8e46cdd5137cc2495bee6b332b8ce = $(`<div id="html_5dc8e46cdd5137cc2495bee6b332b8ce" style="width: 100.0%; height: 100.0%;">The Fresh Market, Birmingham</div>`)[0];
+                popup_132643713ebfced7826b54fcaa8d9f99.setContent(html_5dc8e46cdd5137cc2495bee6b332b8ce);
+            
+        
+
+        marker_ca4ebbf2841b0e7ae8915f2dfd357bc6.bindPopup(popup_132643713ebfced7826b54fcaa8d9f99)
+        ;
+
+        
+    
+    
+            var marker_7044d39ec7f41efac4f6c55470994083 = L.marker(
+                [33.9341, -83.3943],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_6c48de140b0505d63fa2b47d68b4d432 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7044d39ec7f41efac4f6c55470994083.setIcon(icon_6c48de140b0505d63fa2b47d68b4d432);
+        
+    
+        var popup_39e0c67bcc8e05fd5363727ef2dc75fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb1a4f60ec6cbfdb3feb12ef043de73e = $(`<div id="html_bb1a4f60ec6cbfdb3feb12ef043de73e" style="width: 100.0%; height: 100.0%;">The Fresh Market, Athens</div>`)[0];
+                popup_39e0c67bcc8e05fd5363727ef2dc75fe.setContent(html_bb1a4f60ec6cbfdb3feb12ef043de73e);
+            
+        
+
+        marker_7044d39ec7f41efac4f6c55470994083.bindPopup(popup_39e0c67bcc8e05fd5363727ef2dc75fe)
+        ;
+
+        
+    
+    
+            var marker_4d03939dcdc0e213f2a0a8602684df71 = L.marker(
+                [35.8067, -78.6481],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_e639d1f847bde7a93e663b9bba4d26d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d03939dcdc0e213f2a0a8602684df71.setIcon(icon_e639d1f847bde7a93e663b9bba4d26d2);
+        
+    
+        var popup_59a07b50c50e1049093c477239e8ede2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28be60a726c31c39017c228ddf590579 = $(`<div id="html_28be60a726c31c39017c228ddf590579" style="width: 100.0%; height: 100.0%;">The Fresh Market, Raleigh</div>`)[0];
+                popup_59a07b50c50e1049093c477239e8ede2.setContent(html_28be60a726c31c39017c228ddf590579);
+            
+        
+
+        marker_4d03939dcdc0e213f2a0a8602684df71.bindPopup(popup_59a07b50c50e1049093c477239e8ede2)
+        ;
+
+        
+    
+    
+            var marker_e2cb84f845e5b3bacb70756819513624 = L.marker(
+                [35.9157, -79.0576],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_bc8bb980d1793fcab017afd803677bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2cb84f845e5b3bacb70756819513624.setIcon(icon_bc8bb980d1793fcab017afd803677bc7);
+        
+    
+        var popup_38c5b3dd1e305ad5f1023e1ea9ca5e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a4eaac5caecdd1cef3604168ae7befa = $(`<div id="html_2a4eaac5caecdd1cef3604168ae7befa" style="width: 100.0%; height: 100.0%;">The Fresh Market, Chapel Hill</div>`)[0];
+                popup_38c5b3dd1e305ad5f1023e1ea9ca5e6e.setContent(html_2a4eaac5caecdd1cef3604168ae7befa);
+            
+        
+
+        marker_e2cb84f845e5b3bacb70756819513624.bindPopup(popup_38c5b3dd1e305ad5f1023e1ea9ca5e6e)
+        ;
+
+        
+    
+    
+            var marker_85fcf95da21ae69391b2b0dfce534f15 = L.marker(
+                [38.0215, -84.4872],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_792e62566fe0f94e8aad81763f38e0f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_85fcf95da21ae69391b2b0dfce534f15.setIcon(icon_792e62566fe0f94e8aad81763f38e0f8);
+        
+    
+        var popup_c4ac6d35c517e8d08c26fb88e4828dbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6ae22a2b394a222d564275c934ddf31 = $(`<div id="html_a6ae22a2b394a222d564275c934ddf31" style="width: 100.0%; height: 100.0%;">The Fresh Market, Lexington</div>`)[0];
+                popup_c4ac6d35c517e8d08c26fb88e4828dbb.setContent(html_a6ae22a2b394a222d564275c934ddf31);
+            
+        
+
+        marker_85fcf95da21ae69391b2b0dfce534f15.bindPopup(popup_c4ac6d35c517e8d08c26fb88e4828dbb)
+        ;
+
+        
+    
+    
+            var marker_354fffe09c7dfcc32525b2d9203e696f = L.marker(
+                [26.3725, -80.1061],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_4e9231b19789e47c6dd9f34b1f30c213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_354fffe09c7dfcc32525b2d9203e696f.setIcon(icon_4e9231b19789e47c6dd9f34b1f30c213);
+        
+    
+        var popup_cb0939a923146cde386f67756c670367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9742dfd84d46a5f33198d39cb0520def = $(`<div id="html_9742dfd84d46a5f33198d39cb0520def" style="width: 100.0%; height: 100.0%;">The Fresh Market, Boca Raton</div>`)[0];
+                popup_cb0939a923146cde386f67756c670367.setContent(html_9742dfd84d46a5f33198d39cb0520def);
+            
+        
+
+        marker_354fffe09c7dfcc32525b2d9203e696f.bindPopup(popup_cb0939a923146cde386f67756c670367)
+        ;
+
+        
+    
+    
+            var marker_61a613116525e135f606e20b28db81f5 = L.marker(
+                [39.1885, -84.3862],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_4a306591b4d776cbe1fd7d575b0a001f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61a613116525e135f606e20b28db81f5.setIcon(icon_4a306591b4d776cbe1fd7d575b0a001f);
+        
+    
+        var popup_44123dcc7ba63c62a83dbd3d16445ab4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cd56f56286de04acc999bbb540f2ca8 = $(`<div id="html_9cd56f56286de04acc999bbb540f2ca8" style="width: 100.0%; height: 100.0%;">The Fresh Market, Cincinnati</div>`)[0];
+                popup_44123dcc7ba63c62a83dbd3d16445ab4.setContent(html_9cd56f56286de04acc999bbb540f2ca8);
+            
+        
+
+        marker_61a613116525e135f606e20b28db81f5.bindPopup(popup_44123dcc7ba63c62a83dbd3d16445ab4)
+        ;
+
+        
+    
+    
+            var marker_15b6ee5e2eb56c94a96508236b09bb79 = L.marker(
+                [35.9277, -84.0385],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_c5ac2908d7f47c3acaaa3c1228c31a4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15b6ee5e2eb56c94a96508236b09bb79.setIcon(icon_c5ac2908d7f47c3acaaa3c1228c31a4c);
+        
+    
+        var popup_4a63bdab4159a27839da172ab2bfc642 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76fedb8124bf333036a55dda9626e970 = $(`<div id="html_76fedb8124bf333036a55dda9626e970" style="width: 100.0%; height: 100.0%;">The Fresh Mkt, Knoxville</div>`)[0];
+                popup_4a63bdab4159a27839da172ab2bfc642.setContent(html_76fedb8124bf333036a55dda9626e970);
+            
+        
+
+        marker_15b6ee5e2eb56c94a96508236b09bb79.bindPopup(popup_4a63bdab4159a27839da172ab2bfc642)
+        ;
+
+        
+    
+    
+            var marker_7d3619851af50288410a73128edefc85 = L.marker(
+                [39.3956, -76.5987],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_a2d31700e47fd90de611cfcb85237588 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d3619851af50288410a73128edefc85.setIcon(icon_a2d31700e47fd90de611cfcb85237588);
+        
+    
+        var popup_bb7c1e3686cb2f69f701ce8eb7835dda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a553279f26bae2f96f9880a929369bea = $(`<div id="html_a553279f26bae2f96f9880a929369bea" style="width: 100.0%; height: 100.0%;">The Fresh Market, Towson</div>`)[0];
+                popup_bb7c1e3686cb2f69f701ce8eb7835dda.setContent(html_a553279f26bae2f96f9880a929369bea);
+            
+        
+
+        marker_7d3619851af50288410a73128edefc85.bindPopup(popup_bb7c1e3686cb2f69f701ce8eb7835dda)
+        ;
+
+        
+    
+    
+            var marker_7ecafec44215918db6628a6648800ab7 = L.marker(
+                [35.994, -78.9403],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_f8db120291e2670a94506eb990bea3b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ecafec44215918db6628a6648800ab7.setIcon(icon_f8db120291e2670a94506eb990bea3b5);
+        
+    
+        var popup_6a17885e8716061e510ee9e8ae8672f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3b81cef7b27c5336c24af7ca5d136db = $(`<div id="html_a3b81cef7b27c5336c24af7ca5d136db" style="width: 100.0%; height: 100.0%;">The Fresh Market, Durham</div>`)[0];
+                popup_6a17885e8716061e510ee9e8ae8672f3.setContent(html_a3b81cef7b27c5336c24af7ca5d136db);
+            
+        
+
+        marker_7ecafec44215918db6628a6648800ab7.bindPopup(popup_6a17885e8716061e510ee9e8ae8672f3)
+        ;
+
+        
+    
+    
+            var marker_c0ab580dd89e9f898eca26899bea2b20 = L.marker(
+                [25.7255, -80.229],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_273e35d5047b8f932d0f2f99e7312705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0ab580dd89e9f898eca26899bea2b20.setIcon(icon_273e35d5047b8f932d0f2f99e7312705);
+        
+    
+        var popup_2b2edef89c8f8cde25527ead97f8419b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bda1c4ac345d48216e4091d004a5be8 = $(`<div id="html_6bda1c4ac345d48216e4091d004a5be8" style="width: 100.0%; height: 100.0%;">The Fresh Market, Miami</div>`)[0];
+                popup_2b2edef89c8f8cde25527ead97f8419b.setContent(html_6bda1c4ac345d48216e4091d004a5be8);
+            
+        
+
+        marker_c0ab580dd89e9f898eca26899bea2b20.bindPopup(popup_2b2edef89c8f8cde25527ead97f8419b)
+        ;
+
+        
+    
+    
+            var marker_7af0b64f770610eeae91e39f47277fae = L.marker(
+                [41.6664, -83.6006],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_67a99d562ab031c0992c973843426e37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7af0b64f770610eeae91e39f47277fae.setIcon(icon_67a99d562ab031c0992c973843426e37);
+        
+    
+        var popup_4911090c8382a8086557f02b663ae516 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_462e228d1d0ee4fe691cb6e6f4b2de12 = $(`<div id="html_462e228d1d0ee4fe691cb6e6f4b2de12" style="width: 100.0%; height: 100.0%;">The Fresh Market, Toledo</div>`)[0];
+                popup_4911090c8382a8086557f02b663ae516.setContent(html_462e228d1d0ee4fe691cb6e6f4b2de12);
+            
+        
+
+        marker_7af0b64f770610eeae91e39f47277fae.bindPopup(popup_4911090c8382a8086557f02b663ae516)
+        ;
+
+        
+    
+    
+            var marker_3628f380ddd3cbc3cc77039470e4187e = L.marker(
+                [36.312, -82.3688],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_8bee24c347d40d6f1a3e54d876b6ae25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3628f380ddd3cbc3cc77039470e4187e.setIcon(icon_8bee24c347d40d6f1a3e54d876b6ae25);
+        
+    
+        var popup_b06dc91efa5a5c785185900dfe90b740 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b526188971cf7478e90b6b49a3161935 = $(`<div id="html_b526188971cf7478e90b6b49a3161935" style="width: 100.0%; height: 100.0%;">The Fresh Market, Johnson City</div>`)[0];
+                popup_b06dc91efa5a5c785185900dfe90b740.setContent(html_b526188971cf7478e90b6b49a3161935);
+            
+        
+
+        marker_3628f380ddd3cbc3cc77039470e4187e.bindPopup(popup_b06dc91efa5a5c785185900dfe90b740)
+        ;
+
+        
+    
+    
+            var marker_010be4d7a511c3b79af8bf31c88b90b6 = L.marker(
+                [30.4615, -87.1998],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_5de795acfe8b4a13a4440a990fb82c90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_010be4d7a511c3b79af8bf31c88b90b6.setIcon(icon_5de795acfe8b4a13a4440a990fb82c90);
+        
+    
+        var popup_ce0ff21fd72361e0d2be12c4678c3b7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edefb5a50a3b32091e7417d546d87232 = $(`<div id="html_edefb5a50a3b32091e7417d546d87232" style="width: 100.0%; height: 100.0%;">The Fresh Market, Pensacola</div>`)[0];
+                popup_ce0ff21fd72361e0d2be12c4678c3b7d.setContent(html_edefb5a50a3b32091e7417d546d87232);
+            
+        
+
+        marker_010be4d7a511c3b79af8bf31c88b90b6.bindPopup(popup_ce0ff21fd72361e0d2be12c4678c3b7d)
+        ;
+
+        
+    
+    
+            var marker_019b89874d47ae33274351785a3be282 = L.marker(
+                [34.7644, -92.4079],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_464c005abffa8ed1a929c2632f4b8f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_019b89874d47ae33274351785a3be282.setIcon(icon_464c005abffa8ed1a929c2632f4b8f65);
+        
+    
+        var popup_87c2f897538b8989f3f9d4a1c7efa31c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ed3bbbcd6f45dabed9b8169a8daeed6 = $(`<div id="html_4ed3bbbcd6f45dabed9b8169a8daeed6" style="width: 100.0%; height: 100.0%;">The Fresh Market, Little Rock</div>`)[0];
+                popup_87c2f897538b8989f3f9d4a1c7efa31c.setContent(html_4ed3bbbcd6f45dabed9b8169a8daeed6);
+            
+        
+
+        marker_019b89874d47ae33274351785a3be282.bindPopup(popup_87c2f897538b8989f3f9d4a1c7efa31c)
+        ;
+
+        
+    
+    
+            var marker_eecae0e81524d170c9d1ac940e57ea2c = L.marker(
+                [29.6516, -82.3248],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_f27b0babe9ed12919204d027da577237 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eecae0e81524d170c9d1ac940e57ea2c.setIcon(icon_f27b0babe9ed12919204d027da577237);
+        
+    
+        var popup_6dc211a9d0b13cbed26e0748ca8364bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a31b683bdc4b79a7d911cc5e6e8c1268 = $(`<div id="html_a31b683bdc4b79a7d911cc5e6e8c1268" style="width: 100.0%; height: 100.0%;">University of Florida</div>`)[0];
+                popup_6dc211a9d0b13cbed26e0748ca8364bc.setContent(html_a31b683bdc4b79a7d911cc5e6e8c1268);
+            
+        
+
+        marker_eecae0e81524d170c9d1ac940e57ea2c.bindPopup(popup_6dc211a9d0b13cbed26e0748ca8364bc)
+        ;
+
+        
+    
+    
+            var marker_7320f8736bb7ccc7a36773bdb437d0ae = L.marker(
+                [33.7756, -84.3963],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_4b4fd52290ddb5ad43b5f7e8887168d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7320f8736bb7ccc7a36773bdb437d0ae.setIcon(icon_4b4fd52290ddb5ad43b5f7e8887168d0);
+        
+    
+        var popup_a3c1a0c2acfe352e12544a5019ea1acf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c78aac295089b4c03e0c123b024a83 = $(`<div id="html_c3c78aac295089b4c03e0c123b024a83" style="width: 100.0%; height: 100.0%;">Georgia Tech</div>`)[0];
+                popup_a3c1a0c2acfe352e12544a5019ea1acf.setContent(html_c3c78aac295089b4c03e0c123b024a83);
+            
+        
+
+        marker_7320f8736bb7ccc7a36773bdb437d0ae.bindPopup(popup_a3c1a0c2acfe352e12544a5019ea1acf)
+        ;
+
+        
+    
+    
+            var marker_c26f511fd84f0930c28b5a0fa91e4c76 = L.marker(
+                [30.4383, -84.2807],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_07ffb18c18b0cb24a77e131143946b0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c26f511fd84f0930c28b5a0fa91e4c76.setIcon(icon_07ffb18c18b0cb24a77e131143946b0d);
+        
+    
+        var popup_d35dd6dcaa7201a3f8a4b00f62678f93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06cfcd0d1c25fe47cee11a8dcd1c5ccb = $(`<div id="html_06cfcd0d1c25fe47cee11a8dcd1c5ccb" style="width: 100.0%; height: 100.0%;">Florida State University</div>`)[0];
+                popup_d35dd6dcaa7201a3f8a4b00f62678f93.setContent(html_06cfcd0d1c25fe47cee11a8dcd1c5ccb);
+            
+        
+
+        marker_c26f511fd84f0930c28b5a0fa91e4c76.bindPopup(popup_d35dd6dcaa7201a3f8a4b00f62678f93)
+        ;
+
+        
+    
+    
+            var marker_8e497d1aa0ca04b8b4590de4c983dd5b = L.marker(
+                [39.9812, -75.155],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_66ae8bf7a5d2d24fc6d34cc55361c7ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e497d1aa0ca04b8b4590de4c983dd5b.setIcon(icon_66ae8bf7a5d2d24fc6d34cc55361c7ef);
+        
+    
+        var popup_0e5fd559c1e03aa0dd174b33f79faaec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50f515f3b802884cd324d8313e1ac8de = $(`<div id="html_50f515f3b802884cd324d8313e1ac8de" style="width: 100.0%; height: 100.0%;">Temple University</div>`)[0];
+                popup_0e5fd559c1e03aa0dd174b33f79faaec.setContent(html_50f515f3b802884cd324d8313e1ac8de);
+            
+        
+
+        marker_8e497d1aa0ca04b8b4590de4c983dd5b.bindPopup(popup_0e5fd559c1e03aa0dd174b33f79faaec)
+        ;
+
+        
+    
+    
+            var marker_a53260aa107a58ec02b8ae78f6d862b3 = L.marker(
+                [30.4133, -91.18],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_e0abcbafd428957620cda5afb0a5a590 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a53260aa107a58ec02b8ae78f6d862b3.setIcon(icon_e0abcbafd428957620cda5afb0a5a590);
+        
+    
+        var popup_b3bb06a162646cf671f0b49d2747728c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02914161e9713469fa5ee28657f02d20 = $(`<div id="html_02914161e9713469fa5ee28657f02d20" style="width: 100.0%; height: 100.0%;">Louisiana State University</div>`)[0];
+                popup_b3bb06a162646cf671f0b49d2747728c.setContent(html_02914161e9713469fa5ee28657f02d20);
+            
+        
+
+        marker_a53260aa107a58ec02b8ae78f6d862b3.bindPopup(popup_b3bb06a162646cf671f0b49d2747728c)
+        ;
+
+        
+    
+    
+            var marker_b9fa83db0e7b86f74d3fec3a069efd70 = L.marker(
+                [33.214, -87.5391],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_f384b299463051da085d6a6a5776ce60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9fa83db0e7b86f74d3fec3a069efd70.setIcon(icon_f384b299463051da085d6a6a5776ce60);
+        
+    
+        var popup_c43e79d6b05aad9f947a35ef319d4e00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14e4bca8a7fc257f3433929472e478b3 = $(`<div id="html_14e4bca8a7fc257f3433929472e478b3" style="width: 100.0%; height: 100.0%;">University of Alabama</div>`)[0];
+                popup_c43e79d6b05aad9f947a35ef319d4e00.setContent(html_14e4bca8a7fc257f3433929472e478b3);
+            
+        
+
+        marker_b9fa83db0e7b86f74d3fec3a069efd70.bindPopup(popup_c43e79d6b05aad9f947a35ef319d4e00)
+        ;
+
+        
+    
+    
+            var marker_843daa27de83c286f5c707b2794d9ff3 = L.marker(
+                [33.948, -83.3773],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_cf82ab518d18b1a42fe7cbeb877b7f58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_843daa27de83c286f5c707b2794d9ff3.setIcon(icon_cf82ab518d18b1a42fe7cbeb877b7f58);
+        
+    
+        var popup_921d1f6c6d8aedade425e5a15af8d596 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_671bcff42f2ad4a7941644e38aa41a40 = $(`<div id="html_671bcff42f2ad4a7941644e38aa41a40" style="width: 100.0%; height: 100.0%;">University of Georgia</div>`)[0];
+                popup_921d1f6c6d8aedade425e5a15af8d596.setContent(html_671bcff42f2ad4a7941644e38aa41a40);
+            
+        
+
+        marker_843daa27de83c286f5c707b2794d9ff3.bindPopup(popup_921d1f6c6d8aedade425e5a15af8d596)
+        ;
+
+        
+    
+    
+            var marker_17af4eb31f59c861518d9ad7dd17bfa5 = L.marker(
+                [35.7847, -78.6821],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_419b3d0c27d29b185b757beff0995fdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_17af4eb31f59c861518d9ad7dd17bfa5.setIcon(icon_419b3d0c27d29b185b757beff0995fdc);
+        
+    
+        var popup_b586297cedca96d9fecee30d94ac83d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_860f4f9a723fab212283a332cb247a06 = $(`<div id="html_860f4f9a723fab212283a332cb247a06" style="width: 100.0%; height: 100.0%;">NC State</div>`)[0];
+                popup_b586297cedca96d9fecee30d94ac83d6.setContent(html_860f4f9a723fab212283a332cb247a06);
+            
+        
+
+        marker_17af4eb31f59c861518d9ad7dd17bfa5.bindPopup(popup_b586297cedca96d9fecee30d94ac83d6)
+        ;
+
+        
+    
+    
+            var marker_d72ef207e34e03e1bf311e5a5a9dd2d9 = L.marker(
+                [35.9049, -79.0469],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_3cb582c496e3d0be2a0e052d03c5bf04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d72ef207e34e03e1bf311e5a5a9dd2d9.setIcon(icon_3cb582c496e3d0be2a0e052d03c5bf04);
+        
+    
+        var popup_3e05045d7e9b57b3a41c6cdb71a84214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d17abdfb96858ae87bfe17eac3a3ed9a = $(`<div id="html_d17abdfb96858ae87bfe17eac3a3ed9a" style="width: 100.0%; height: 100.0%;">UNC Chapel Hill</div>`)[0];
+                popup_3e05045d7e9b57b3a41c6cdb71a84214.setContent(html_d17abdfb96858ae87bfe17eac3a3ed9a);
+            
+        
+
+        marker_d72ef207e34e03e1bf311e5a5a9dd2d9.bindPopup(popup_3e05045d7e9b57b3a41c6cdb71a84214)
+        ;
+
+        
+    
+    
+            var marker_0dde76bb9d0c2ff62071b593dce2e1ec = L.marker(
+                [38.0317, -84.5037],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_afc27e2391144f6384793685829523d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0dde76bb9d0c2ff62071b593dce2e1ec.setIcon(icon_afc27e2391144f6384793685829523d7);
+        
+    
+        var popup_f8f12971d768939537d835b52c82d32e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93ba1ae3414a489e3baaaae693cc566e = $(`<div id="html_93ba1ae3414a489e3baaaae693cc566e" style="width: 100.0%; height: 100.0%;">University of Kentucky Lexington</div>`)[0];
+                popup_f8f12971d768939537d835b52c82d32e.setContent(html_93ba1ae3414a489e3baaaae693cc566e);
+            
+        
+
+        marker_0dde76bb9d0c2ff62071b593dce2e1ec.bindPopup(popup_f8f12971d768939537d835b52c82d32e)
+        ;
+
+        
+    
+    
+            var marker_dfc6a153a4dab7b142bc39f2b452fd57 = L.marker(
+                [26.3732, -80.1012],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_16b8745e284eda27ac9da0e36f9633cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dfc6a153a4dab7b142bc39f2b452fd57.setIcon(icon_16b8745e284eda27ac9da0e36f9633cc);
+        
+    
+        var popup_48c71e002a16e18fd73d3acbdbef611a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3d07828b394ec1a48f7a6e7c08972d5 = $(`<div id="html_c3d07828b394ec1a48f7a6e7c08972d5" style="width: 100.0%; height: 100.0%;">Florida Atlantic University</div>`)[0];
+                popup_48c71e002a16e18fd73d3acbdbef611a.setContent(html_c3d07828b394ec1a48f7a6e7c08972d5);
+            
+        
+
+        marker_dfc6a153a4dab7b142bc39f2b452fd57.bindPopup(popup_48c71e002a16e18fd73d3acbdbef611a)
+        ;
+
+        
+    
+    
+            var marker_1b13d7afd239529d672e850f4f0db774 = L.marker(
+                [39.1319, -84.5155],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_67ec08927e42037ec671e3dc86ba4d13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b13d7afd239529d672e850f4f0db774.setIcon(icon_67ec08927e42037ec671e3dc86ba4d13);
+        
+    
+        var popup_924c4c008f9e39002dc47f77811e6fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f29c7ab0641d330067f7355b4250a58a = $(`<div id="html_f29c7ab0641d330067f7355b4250a58a" style="width: 100.0%; height: 100.0%;">University of Cincinnati</div>`)[0];
+                popup_924c4c008f9e39002dc47f77811e6fa3.setContent(html_f29c7ab0641d330067f7355b4250a58a);
+            
+        
+
+        marker_1b13d7afd239529d672e850f4f0db774.bindPopup(popup_924c4c008f9e39002dc47f77811e6fa3)
+        ;
+
+        
+    
+    
+            var marker_80e3558d1f5d49073ced166c04615c83 = L.marker(
+                [35.9545, -83.9295],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_5ced8b91f8036a570c43f2eebfac6abd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_80e3558d1f5d49073ced166c04615c83.setIcon(icon_5ced8b91f8036a570c43f2eebfac6abd);
+        
+    
+        var popup_ae795723e5f3ded1313f6a6e1356f33c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53b25bc6c75f320f945c949af2effdec = $(`<div id="html_53b25bc6c75f320f945c949af2effdec" style="width: 100.0%; height: 100.0%;">University of Tennessee Knoxville</div>`)[0];
+                popup_ae795723e5f3ded1313f6a6e1356f33c.setContent(html_53b25bc6c75f320f945c949af2effdec);
+            
+        
+
+        marker_80e3558d1f5d49073ced166c04615c83.bindPopup(popup_ae795723e5f3ded1313f6a6e1356f33c)
+        ;
+
+        
+    
+    
+            var marker_8a6152db423869b53ba798836d6fbdf1 = L.marker(
+                [39.3932, -76.6122],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_366bf604fe58caa75e677092f4687729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a6152db423869b53ba798836d6fbdf1.setIcon(icon_366bf604fe58caa75e677092f4687729);
+        
+    
+        var popup_df599136b450e18bff156f0443707d76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e529098b87254eb5c8b8c89e1ba9659 = $(`<div id="html_1e529098b87254eb5c8b8c89e1ba9659" style="width: 100.0%; height: 100.0%;">Towson University</div>`)[0];
+                popup_df599136b450e18bff156f0443707d76.setContent(html_1e529098b87254eb5c8b8c89e1ba9659);
+            
+        
+
+        marker_8a6152db423869b53ba798836d6fbdf1.bindPopup(popup_df599136b450e18bff156f0443707d76)
+        ;
+
+        
+    
+    
+            var marker_e8573a9b51000475354e3e2159b36961 = L.marker(
+                [36.0014, -78.9382],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_32c82180ac1cbc38cfa80aff7fd99e23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e8573a9b51000475354e3e2159b36961.setIcon(icon_32c82180ac1cbc38cfa80aff7fd99e23);
+        
+    
+        var popup_8b952b51bafeffda7f230ee545026e45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bc4a3766190b048490dfc90cec2dcaf = $(`<div id="html_9bc4a3766190b048490dfc90cec2dcaf" style="width: 100.0%; height: 100.0%;">Duke University</div>`)[0];
+                popup_8b952b51bafeffda7f230ee545026e45.setContent(html_9bc4a3766190b048490dfc90cec2dcaf);
+            
+        
+
+        marker_e8573a9b51000475354e3e2159b36961.bindPopup(popup_8b952b51bafeffda7f230ee545026e45)
+        ;
+
+        
+    
+    
+            var marker_d54c1b405c40b38842a78831221b25a1 = L.marker(
+                [25.7216, -80.2793],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_58cdcbdfbb8141d07059e4d321bbc0f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d54c1b405c40b38842a78831221b25a1.setIcon(icon_58cdcbdfbb8141d07059e4d321bbc0f2);
+        
+    
+        var popup_117a746372727970f6a25ada178cbf80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a903f0b73175a1cc618783e7a232abbe = $(`<div id="html_a903f0b73175a1cc618783e7a232abbe" style="width: 100.0%; height: 100.0%;">University of Miami</div>`)[0];
+                popup_117a746372727970f6a25ada178cbf80.setContent(html_a903f0b73175a1cc618783e7a232abbe);
+            
+        
+
+        marker_d54c1b405c40b38842a78831221b25a1.bindPopup(popup_117a746372727970f6a25ada178cbf80)
+        ;
+
+        
+    
+    
+            var marker_9bed59f812910446447769ed3093c4c4 = L.marker(
+                [41.6613, -83.6143],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_71e85f1481f75632044905af57affc2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9bed59f812910446447769ed3093c4c4.setIcon(icon_71e85f1481f75632044905af57affc2e);
+        
+    
+        var popup_5c939e6a53c0bc9996244fe47779469d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bc848730cbf3255b642e85e8e0c8b34 = $(`<div id="html_5bc848730cbf3255b642e85e8e0c8b34" style="width: 100.0%; height: 100.0%;">University of Toledo</div>`)[0];
+                popup_5c939e6a53c0bc9996244fe47779469d.setContent(html_5bc848730cbf3255b642e85e8e0c8b34);
+            
+        
+
+        marker_9bed59f812910446447769ed3093c4c4.bindPopup(popup_5c939e6a53c0bc9996244fe47779469d)
+        ;
+
+        
+    
+    
+            var marker_e724d6a5c21ad9b5ddc4bfc92c9f5860 = L.marker(
+                [36.3048, -82.3692],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_2dde2f67f89d0c1ade5a2cd6e8e29dea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e724d6a5c21ad9b5ddc4bfc92c9f5860.setIcon(icon_2dde2f67f89d0c1ade5a2cd6e8e29dea);
+        
+    
+        var popup_b710d3f4ab11ba7ddb9d4072b7f02fa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f854fd7a1ec614af9251451496aae010 = $(`<div id="html_f854fd7a1ec614af9251451496aae010" style="width: 100.0%; height: 100.0%;">ETSU</div>`)[0];
+                popup_b710d3f4ab11ba7ddb9d4072b7f02fa1.setContent(html_f854fd7a1ec614af9251451496aae010);
+            
+        
+
+        marker_e724d6a5c21ad9b5ddc4bfc92c9f5860.bindPopup(popup_b710d3f4ab11ba7ddb9d4072b7f02fa1)
+        ;
+
+        
+    
+    
+            var marker_27f70d2b60a2f07add5633398c999630 = L.marker(
+                [30.554, -87.2178],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_4414c5fd390e2240f6a7d32e4cb30d44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_27f70d2b60a2f07add5633398c999630.setIcon(icon_4414c5fd390e2240f6a7d32e4cb30d44);
+        
+    
+        var popup_8c9101fe16aab6c53474f66ee791cd44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02bf1bcd09afa58f08a25c9e82030cc4 = $(`<div id="html_02bf1bcd09afa58f08a25c9e82030cc4" style="width: 100.0%; height: 100.0%;">University of West Florida</div>`)[0];
+                popup_8c9101fe16aab6c53474f66ee791cd44.setContent(html_02bf1bcd09afa58f08a25c9e82030cc4);
+            
+        
+
+        marker_27f70d2b60a2f07add5633398c999630.bindPopup(popup_8c9101fe16aab6c53474f66ee791cd44)
+        ;
+
+        
+    
+    
+            var marker_a542289ed2564924bf6d6e480cae0f38 = L.marker(
+                [34.7248, -92.34],
+                {}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var icon_0af413b48ab56ee951b694e85f44b4c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a542289ed2564924bf6d6e480cae0f38.setIcon(icon_0af413b48ab56ee951b694e85f44b4c8);
+        
+    
+        var popup_017996bbd60afc64c16452a105e4cffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5354642506bc3dfa91d16a1cd7b7194 = $(`<div id="html_f5354642506bc3dfa91d16a1cd7b7194" style="width: 100.0%; height: 100.0%;">University of Arkansas at Little Rock</div>`)[0];
+                popup_017996bbd60afc64c16452a105e4cffc.setContent(html_f5354642506bc3dfa91d16a1cd7b7194);
+            
+        
+
+        marker_a542289ed2564924bf6d6e480cae0f38.bindPopup(popup_017996bbd60afc64c16452a105e4cffc)
+        ;
+
+        
+    
+    
+            var poly_line_fdf191304cdcefb3a36e2c987e618191 = L.polyline(
+                [[29.6617, -82.3346], [29.6516, -82.3248]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_be062fcc2a1851777f76a5b3826c88ec = L.polyline(
+                [[33.8197, -84.3844], [33.7756, -84.3963]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_448f2fdae13e4a9e54e7d066a79a0bce = L.polyline(
+                [[30.5026, -84.2905], [30.4383, -84.2807]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_c33df78486d9d4d3478a5f311006b748 = L.polyline(
+                [[39.9853, -75.1875], [39.9812, -75.155]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_ceedd95ce7b8d2a98b2993d8f0ad18db = L.polyline(
+                [[30.4087, -91.0917], [30.4133, -91.18]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_a4d2dd93fb88a1199042ae05014049b7 = L.polyline(
+                [[33.4297, -86.7254], [33.214, -87.5391]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_11c564a550b6f0288b293f4bfe4a9234 = L.polyline(
+                [[33.9341, -83.3943], [33.948, -83.3773]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_e8cc2b1a9d62edf5c6bd5a3a96356f01 = L.polyline(
+                [[35.8067, -78.6481], [35.7847, -78.6821]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_86390f5aaa2196ca25e0a060d75ed74d = L.polyline(
+                [[35.9157, -79.0576], [35.9049, -79.0469]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_ca2861eca467380e1aebccb92ec9b6be = L.polyline(
+                [[38.0215, -84.4872], [38.0317, -84.5037]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_2a82a4abe7b1fdf94ecfd02493a15172 = L.polyline(
+                [[26.3725, -80.1061], [26.3732, -80.1012]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_720b21d850875267830131d9d20bb1b9 = L.polyline(
+                [[39.1885, -84.3862], [39.1319, -84.5155]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_52acabda1ffaeac4e04a8bacd42ad056 = L.polyline(
+                [[35.9277, -84.0385], [35.9545, -83.9295]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_0b719616b8a81aed62581be0b86022fd = L.polyline(
+                [[39.3956, -76.5987], [39.3932, -76.6122]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_888f49f049f32fd287c900a6e02c3ee5 = L.polyline(
+                [[35.994, -78.9403], [36.0014, -78.9382]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_4a048985e1b8a7ba0ff0ad6b74b5d422 = L.polyline(
+                [[25.7255, -80.229], [25.7216, -80.2793]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_fadf62efe7ab84134833852969722a89 = L.polyline(
+                [[41.6664, -83.6006], [41.6613, -83.6143]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_30165bf74ce4d7251af77e76e612a07a = L.polyline(
+                [[36.312, -82.3688], [36.3048, -82.3692]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_67d48145190220e2b2dc298233ea71ce = L.polyline(
+                [[30.4615, -87.1998], [30.554, -87.2178]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+    
+            var poly_line_7dd143eaefd0cfe1f20528fd8456b45b = L.polyline(
+                [[34.7644, -92.4079], [34.7248, -92.34]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_109c8de2b10a6721aa8ea012a19ffdd9);
+        
+</script>
+</html>
